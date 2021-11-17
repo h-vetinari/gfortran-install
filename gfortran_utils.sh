@@ -91,7 +91,7 @@ function get_gf_lib_for_suf {
 if [ "$(uname)" == "Darwin" ]; then
     mac_target=${MACOSX_DEPLOYMENT_TARGET:-$(get_macosx_target)}
     export MACOSX_DEPLOYMENT_TARGET=$mac_target
-    GFORTRAN_DMG="${GF_UTIL_DIR}/archives/gfortran-4.9.0-Mavericks.dmg"
+    GFORTRAN_DMG="${GF_UTIL_DIR}/archives/gfortran-5.1.0-Mavericks.dmg"
     export GFORTRAN_SHA="$(shasum $GFORTRAN_DMG)"
 
     function install_arm64_cross_gfortran {
